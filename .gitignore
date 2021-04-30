@@ -1,0 +1,26 @@
+.DS_Store
+.bash_history
+
+# zeit pkg builds
+*/*/build/*
+# but keep the folder
+!*/*/build/.keep 
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+#Node JS environment files
+.env
+
+# Dependency directories
+node_modules
+jspm_packages
+.node-gyp
+# Optional npm cache directory
+.npm

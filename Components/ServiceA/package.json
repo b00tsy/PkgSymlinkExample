@@ -1,0 +1,14 @@
+{
+  "name": "servicea",
+  "version": "0.0.1",
+  "main": "app.js",
+  "bin": "app.js",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/figlet/fonts/**/*.*"
+    ]
+  }
+}
