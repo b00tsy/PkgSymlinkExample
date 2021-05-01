@@ -1,0 +1,14 @@
+version: '3.4'
+       
+services:
+
+  servicea: 
+    build:
+      context: ./Components/ServiceA
+      args:
+        - NODE_IMAGE_VERSION=node:14.16.0-buster
+    volumes: 
+      - /home/app/ServiceA/node_modules                                     # (bind mount folder from image)
+      - ./Components/ServiceA:/home/app/ServiceA:ro
+      - ./Components/Helper:/home/app/Helper:ro
+    # command: tail -f /dev/null

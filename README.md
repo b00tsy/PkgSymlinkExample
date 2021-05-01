@@ -9,3 +9,11 @@
 on macos building with pkg@4.5.1 this works, building with pkg@5.0.0 (and running with `node Components/ServiceA/app.js`) fails.
 
 
+
+# Docker example works:
+
+in root dir:
+
+`docker-compose build && docker-compose up`
+
+
